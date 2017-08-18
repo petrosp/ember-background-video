@@ -48,7 +48,7 @@
     "broccoli-merge-trees": "1.1.5",
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "1.1.1",
-    "jquery-background-video": "1.0.0"
+    "jquery-background-video": "github:BGStock/jquery-background-video#d0441c7"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
