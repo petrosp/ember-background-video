@@ -11,6 +11,9 @@ export default Ember.Component.extend({
   layout,
   classNames: 'ember-background-video jquery-background-video-wrapper',
   
+  // Sets the video to be fixed to the full window
+  fullscreen: true,
+  
   // Milliseconds to fade video in/out (0 for no fade)
   fadeIn: 500, 
 
@@ -52,7 +55,7 @@ export default Ember.Component.extend({
     let options = this.getProperties([
       'fadeIn', 'pauseAfter', 'fadeOnPause', 'fadeOnEnd',
       'showPausePlay', 'pausePlayXPos', 'pausePlayYPos', 
-      'pausePlayXOffset', 'pausePlayYOffset'
+      'pausePlayXOffset', 'pausePlayYOffset', 'fullscreen'
     ]);
 
     this.$().find('.jquery-background-video').bgVideo(options);
