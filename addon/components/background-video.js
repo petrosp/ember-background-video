@@ -10,7 +10,7 @@ const {
 export default Ember.Component.extend({
   layout,
   classNames: 'ember-background-video jquery-background-video-wrapper',
-  
+  isMute: true,
   // Sets the video to be fixed to the full window
   fullScreen: true,
   
@@ -18,10 +18,10 @@ export default Ember.Component.extend({
   fadeIn: 500, 
 
   // Seconds to play before pausing (0 for forever)
-  pauseAfter: 120, 
+  pauseAfter: 0, 
 
   // For all (including manual) pauses
-  fadeOnPause: false, 
+  fadeOnPause: true, 
 
   // When we've reached the pauseAfter time
   fadeOnEnd: true, 
